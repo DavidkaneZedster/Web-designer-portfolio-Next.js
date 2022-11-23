@@ -1,0 +1,23 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.work__image,
+.work__subscription {
+  max-width: 669px;
+  width: 100%;
+}
+
+.work__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.work__subscription {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}

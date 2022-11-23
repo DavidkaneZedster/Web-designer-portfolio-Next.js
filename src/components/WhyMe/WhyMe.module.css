@@ -1,0 +1,53 @@
+.why__me {
+  padding-top: 105px;
+}
+
+.why__me_header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 54px;
+}
+
+.why__me_title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.03em;
+  border: 1px solid transparent;
+  border-image: 
+    linear-gradient(
+      to right,
+      #130952, 
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ) 1;
+  padding: 46px 9px 46px 105px;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.reason__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.reason__subscription {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  max-width: 669px;
+  width: 100%;
+}

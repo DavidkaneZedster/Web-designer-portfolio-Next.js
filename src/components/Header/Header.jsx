@@ -21,7 +21,7 @@ export const Header = () => {
               </Link>
             </li>
             <Link href='/'>
-              <Image width={110} height={165} className={styles.logo} src={logo} alt='logo' />
+              <Image width={115} height={205} className={styles.logo} src={logo} alt='logo' />
             </Link>
             <li className={styles.menu__item}>
               <Link href='#whyMe' className={styles.menu__link}>
@@ -40,14 +40,14 @@ export const Header = () => {
             <h1 className={styles.about__title_span}>Web</h1>
             Dизайнер
           </div>
-          <div className='title name text_right'>Сергей Сулавко</div>
+          <div className='title name textRight'>Сергей Сулавко</div>
         </div>
         <div className={styles.about__me}>
           <div className={styles.person__photo}>
             <div className={styles.photo}>some photo</div>
           </div>
           <div className={styles.info__about_me}>
-            <div className={styles.title}>
+            <div className='title'>
               <h2 className={styles.about__me_btn}>ОБО МНЕ</h2>
             </div>
             <div className={styles.about__me_text}>
