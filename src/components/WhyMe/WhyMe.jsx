@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from './WhyMe.module.css'
-import { reasons } from '../../assets'
+import { reasons } from '../../shared/assets'
 
 export const WhyMe = () => {
   return (

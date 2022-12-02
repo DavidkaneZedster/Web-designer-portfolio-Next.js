@@ -1,4 +1,4 @@
-import workTemplateImage from '../../images/work__template-image.png'
+import workTemplateImage from '../images/work__template-image.png'
 
 export const works = [
   {

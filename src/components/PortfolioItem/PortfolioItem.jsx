@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './PortfolioItem.module.css'
 import cn from 'classnames'
 import Image from 'next/image'
