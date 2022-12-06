@@ -8,10 +8,16 @@ import cn from 'classnames'
 
 export const PortfolioPageComponent = () => {
   const [isShortFormat, setIsShortFormat] = useState(true)
+  const bottomButtonPosition = [0, 2050]
+  const topButtonPosition = [0, 650]
 
   const isShortFormatHandler = () => {
-    setIsShortFormat(!isShortFormat)
-    isShortFormat ? scrollTo(0, 2050) : scrollTo(0, 650)
+    isShortFormat ? scrollTo(...bottomButtonPosition) : scrollTo(...topButtonPosition)
+    isShortFormat
+      ? setIsShortFormat(!isShortFormat)
+      : setTimeout(() => {
+          setIsShortFormat(!isShortFormat)
+        }, 100)
   }
 
   return (
@@ -19,27 +25,11 @@ export const PortfolioPageComponent = () => {
       <div className={cn(styles.works, 'container')}>
         <div className={styles.works__section}>
           {isShortFormat
-            ? works.map(work => (
-                <PortfolioItem
-                  key={work.id}
-                  name={work.name}
-                  subscription={work.subscription}
-                  imageUrl={work.imageUrl}
-                  textRight={work.textRight}
-                />
-              ))
-            : isFullPortfolioPageWorks.map(work => (
-                <PortfolioItem
-                  key={work.id}
-                  name={work.name}
-                  subscription={work.subscription}
-                  imageUrl={work.imageUrl}
-                  textRight={work.textRight}
-                />
-              ))}
+            ? works.map(work => <PortfolioItem key={work.id} {...work} />)
+            : isFullPortfolioPageWorks.map(work => <PortfolioItem key={work.id} {...work} />)}
         </div>
         <div className={styles.button}>
-          <a style={{ cursor: 'pointer' }} onClick={() => isShortFormatHandler()}>
+          <a id='button' style={{ cursor: 'pointer' }} onClick={() => isShortFormatHandler()}>
             {isShortFormat ? <DownloadMore /> : <ArrowUp />}
           </a>
         </div>

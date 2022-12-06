@@ -18,13 +18,7 @@ export const Portfolio = () => {
       <div className={styles.works}>
         <div className={styles.works__section}>
           {works.map(work => (
-            <PortfolioItem
-              imageUrl={work.imageUrl}
-              name={work.name}
-              subscription={work.subscription}
-              key={work.id}
-              textRight={work.textRight}
-            />
+            <PortfolioItem {...work} key={work.id} />
           ))}
         </div>
       </div>

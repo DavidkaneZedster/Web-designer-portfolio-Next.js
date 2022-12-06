@@ -9,7 +9,11 @@ export const PortfolioItem = ({ imageUrl, name, subscription, textRight }) => {
       <div className={styles.work__image}>
         <Image placeholder='blur' priority src={imageUrl} alt='work' />
       </div>
-      <div className={textRight ? cn('textRight', styles.work__title) : cn(styles.work__title)}>
+      <div
+        className={cn(styles.work__title, {
+          ['textRight']: textRight,
+        })}
+      >
         {textRight ? (
           <>
             <ArrowDown />
@@ -21,13 +25,6 @@ export const PortfolioItem = ({ imageUrl, name, subscription, textRight }) => {
             <ArrowDown />
           </>
         )}
-      </div>
-      <div
-        className={cn(styles.work__title, {
-          ['textRight']: textRight,
-        })}
-      >
-        {name}
       </div>
       <div
         className={cn(styles.work__subscription, {

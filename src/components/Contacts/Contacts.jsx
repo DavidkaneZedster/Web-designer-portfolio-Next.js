@@ -1,4 +1,4 @@
-import Mail from '../../shared/assets/icons/common/mail.svg'
+import Mail from '../../shared/assets/icons/common/vk.svg'
 import Vk from '../../shared/assets/icons/common/vk.svg'
 import Telegram from '../../shared/assets/icons/common/telegram.svg'
 import styles from './Contacts.module.css'
