@@ -11,7 +11,7 @@ export const Portfolio = () => {
       <div className={styles.portfolio__header}>
         <h2 className={cn(styles.title, styles.portfolio__title)}>ПОРТФОЛИО</h2>
         <p className={styles.all__works}>
-          <Link className={styles.all__works_link} href='#'>
+          <Link className={styles.all__works_link} href='../../../pages/portfolio.js'>
             все работы
           </Link>
         </p>
