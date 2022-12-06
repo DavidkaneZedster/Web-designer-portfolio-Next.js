@@ -1,8 +1,8 @@
-import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Header.module.css'
-import logo from '../../images/logo.svg'
-import Link from 'next/link'
+import workTemplateImage from '../../shared/assets/images/work__template-image.png'
+import Logo from '../../shared/assets/icons/common/logo.svg'
 
 export const Header = () => {
   return (
@@ -21,7 +21,7 @@ export const Header = () => {
               </Link>
             </li>
             <Link href='/'>
-              <Image width={115} height={205} className={styles.logo} src={logo} alt='logo' />
+              <Logo className={styles.logo} />
             </Link>
             <li className={styles.menu__item}>
               <Link href='#whyMe' className={styles.menu__link}>
@@ -44,7 +44,7 @@ export const Header = () => {
         </div>
         <div className={styles.about__me}>
           <div className={styles.person__photo}>
-            <div className={styles.photo}>some photo</div>
+            <Image className={styles.photo} src={workTemplateImage} alt='myPhoto' />
           </div>
           <div className={styles.info__about_me}>
             <div className='title'>

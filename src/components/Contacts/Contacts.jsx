@@ -1,9 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
+import Mail from '../../shared/assets/icons/common/mail.svg'
+import Vk from '../../shared/assets/icons/common/vk.svg'
+import Telegram from '../../shared/assets/icons/common/telegram.svg'
 import styles from './Contacts.module.css'
-import mail from '../../images/mail.svg'
-import vk from '../../images/vk.svg'
-import telegram from '../../images/telegram.svg'
 
 export const Contacts = () => {
   return (
@@ -29,15 +27,15 @@ export const Contacts = () => {
         </div>
         <div className={styles.feedback__contacts}>
           <div className={styles.feedback__contacts_item}>
-            <Image src={mail} alt='e-mail' />
+            <Mail />
             <p>sulavko@gmail.com</p>
           </div>
           <div className={styles.feedback__contacts_item}>
-            <Image src={vk} alt='vk' />
+            <Vk />
             <p>https://vk.com/sulavko</p>
           </div>
           <div className={styles.feedback__contacts_item}>
-            <Image src={telegram} alt='telegram' />
+            <Telegram />
             <p>https://telegram/sulavko</p>
           </div>
         </div>

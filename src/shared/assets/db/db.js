@@ -1,4 +1,6 @@
-import workTemplateImage from '../../images/work__template-image.png'
+import workTemplateImage from '../images/work__template-image.png'
+
+// works
 
 export const works = [
   {
@@ -34,6 +36,77 @@ export const works = [
     textRight: true,
   },
 ]
+
+// isFullPortfolioPageWorks
+
+export const isFullPortfolioPageWorks = [
+  {
+    id: 1,
+    imageUrl: workTemplateImage,
+    name: 'Название проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: false,
+  },
+  {
+    id: 2,
+    imageUrl: workTemplateImage,
+    name: 'Название проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: true,
+  },
+  {
+    id: 3,
+    imageUrl: workTemplateImage,
+    name: 'Название проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: false,
+  },
+  {
+    id: 4,
+    imageUrl: workTemplateImage,
+    name: 'Название проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: true,
+  },
+  {
+    id: 5,
+    imageUrl: workTemplateImage,
+    name: 'Название нового проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: false,
+  },
+  {
+    id: 6,
+    imageUrl: workTemplateImage,
+    name: 'Название нового проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: true,
+  },
+  {
+    id: 7,
+    imageUrl: workTemplateImage,
+    name: 'Название нового проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: false,
+  },
+  {
+    id: 8,
+    imageUrl: workTemplateImage,
+    name: 'Название нового проекта',
+    subscription:
+      'Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.',
+    textRight: true,
+  },
+]
+
+// reasons
 
 export const reasons = [
   {

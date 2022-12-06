@@ -1,3 +1,2 @@
-export * from './assets'
+export * from './shared'
 export * from './components'
-export * from './images'

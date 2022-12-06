@@ -41,6 +41,10 @@ a, li {
   text-align: right;
 }
 
+.no-border {
+  border: none!important;
+}
+
 .name {
   max-width: 170px;
   width: 100%;

@@ -1,7 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../images/logo.svg'
+import Logo from '../../shared/assets/icons/common/logo.svg'
 import styles from './Footer.module.css'
 
 export const Footer = () => {
@@ -10,12 +8,12 @@ export const Footer = () => {
       <div className='container'>
         <div className={styles.footer__logo}>
           <Link href='/'>
-            <Image width={110} height={165} src={logo} alt='logo' />
+            <Logo />
           </Link>
         </div>
         <div className={styles.footer__container}>
           <div className={styles.contact}>
-            <p className='title name no_border'>Сергей Сулавко</p>
+            <p className='title no-border name'>Сергей Сулавко</p>
             <Link href='#contacts' className={styles.contact__button}>
               связаться
             </Link>

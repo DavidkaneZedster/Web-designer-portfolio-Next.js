@@ -1,0 +1,23 @@
+.main {
+  background: url('../../shared/assets/images/portfolio__background.png') no-repeat bottom;
+  margin-bottom: 300px;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.works__section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 170px;
+}
