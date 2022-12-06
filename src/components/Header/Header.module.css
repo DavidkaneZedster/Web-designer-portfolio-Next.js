@@ -21,8 +21,6 @@
   padding-top: 20px;
 }
 
-/* about */
-
 .about {
   display: flex;
   justify-content: space-between;
@@ -47,8 +45,6 @@
   line-height: 122px;
   color: #FF5050;
 }
-
-/* about__me */
 
 .about__me {
   display: flex;

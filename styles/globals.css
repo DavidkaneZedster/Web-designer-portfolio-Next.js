@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(179.4deg, #FFFFFF 0.53%, #F8F5C3 99.49%);
+  scroll-behavior: smooth;
 }
 
 * {

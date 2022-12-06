@@ -22,7 +22,18 @@ export const PortfolioItem = ({ imageUrl, name, subscription, textRight }) => {
           </>
         )}
       </div>
-      <div className={textRight ? cn('textRight', styles.work__subscription) : cn(styles.work__subscription)}>
+      <div
+        className={cn(styles.work__title, {
+          ['textRight']: textRight,
+        })}
+      >
+        {name}
+      </div>
+      <div
+        className={cn(styles.work__subscription, {
+          ['textRight']: textRight,
+        })}
+      >
         {subscription}
       </div>
     </div>
