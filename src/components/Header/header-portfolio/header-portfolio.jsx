@@ -14,9 +14,9 @@ export const HeaderPortfolio = () => {
                 ВЕРНУТЬСЯ ..
               </Link>
             </li>
-            <a href='/'>
+            <Link href='/'>
               <Logo />
-            </a>
+            </Link>
             <li className={styles.menu__item}>
               <Link className={styles.menu__link} href='/#contacts'>
                 КОНТАКТЫ
